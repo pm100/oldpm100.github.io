@@ -129,7 +129,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-gCNsST4WQK7pay4Q95r+1zym1oWL7DgMZK1rGclUcR0=",
+      "hash": "sha256-nlBYbR47gAeOPFJm33P3Z2G\/Tfq\/XGugwjUYsP2hRW4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -465,5 +465,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "Xi+9\/PVS"
+  "version": "WkvUZVkn"
 };
