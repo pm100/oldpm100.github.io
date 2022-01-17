@@ -125,11 +125,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-3P6YxVKjJvo\/alPBwBmFVUdypqcIpRMHXtdtw9IjqdI=",
+      "hash": "sha256-jLZRTKE1Ud9tutuajMrgNmOo5NojAhz94oy+mq9DB0o=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-nBTNVYwmR3CVH1PiMc0MZPNKty4HUITDBv+Xhj+M7pY=",
+      "hash": "sha256-zXssNZTsvYuAdN94VjELOEpA5\/PGkpaJXlpy5ivVl6E=",
       "url": "_framework\/earworm.dll"
     },
     {
@@ -465,5 +465,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "s6DWCa96"
+  "version": "qwAQgUo1"
 };
