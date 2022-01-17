@@ -116,6 +116,10 @@ button[b-0ru8qqxa5p] {
 .hx-context-menu-btn:hover[b-eznrxray2a] {
     background: var(--hx-context-menu-button-hover-background);
 }
+
+.hx-context-menu[b-eznrxray2a] {
+    display: inline-block;
+}
 /* _content/Havit.Blazor.Components.Web.Bootstrap/ContextMenus/HxContextMenuItem.razor.rz.scp.css */
 a[b-mo5ybhq3h9] {
     display: flex;
@@ -166,19 +170,19 @@ a[b-mo5ybhq3h9] {
     opacity: var(--hx-autosuggest-input-close-icon-opacity);
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxInputDateInternal.razor.rz.scp.css */
-.hx-input-date > button[b-vy6vrzeamt], .hx-input-date:not(.custom-dates) .form-control[b-vy6vrzeamt] {
-    border-top-right-radius: .25rem !important;
-    border-bottom-right-radius: .25rem !important;
+.hx-input-date > button[b-vy6vrzeamt], .hx-input-date:not(.hx-input-date-predefined-dates) .form-control[b-vy6vrzeamt] {
+	border-top-right-radius: .25rem !important;
+	border-bottom-right-radius: .25rem !important;
 }
 
-.input-group-sm > .hx-input-date > button[b-vy6vrzeamt], .hx-input-date:not(.custom-dates) .form-control[b-vy6vrzeamt] {
-    border-top-right-radius: .2rem !important;
-    border-bottom-right-radius: .2rem !important;
+.input-group-sm > .hx-input-date > button[b-vy6vrzeamt], .hx-input-date:not(.hx-input-date-predefined-dates) .form-control[b-vy6vrzeamt] {
+	border-top-right-radius: .2rem !important;
+	border-bottom-right-radius: .2rem !important;
 }
 
-.input-group-lg > .hx-input-date > button[b-vy6vrzeamt], .hx-input-date:not(.custom-dates) .form-control[b-vy6vrzeamt] {
-    border-top-right-radius: .3rem !important;
-    border-bottom-right-radius: .3rem !important;
+.input-group-lg > .hx-input-date > button[b-vy6vrzeamt], .hx-input-date:not(.hx-input-date-predefined-dates) .form-control[b-vy6vrzeamt] {
+	border-top-right-radius: .3rem !important;
+	border-bottom-right-radius: .3rem !important;
 }
 
 .hx-input-date-icon[b-vy6vrzeamt] {
@@ -186,7 +190,7 @@ a[b-mo5ybhq3h9] {
     z-index: 1;
 }
 
-.hx-input-date-has-calendar-icon.custom-dates .hx-input-date-icon[b-vy6vrzeamt] {
+.hx-input-date-has-calendar-icon.hx-input-date-predefined-dates .hx-input-date-icon[b-vy6vrzeamt] {
 	margin-right: 3.5rem;
 }
 
@@ -198,7 +202,7 @@ a[b-mo5ybhq3h9] {
 	padding-right: 4.25rem;
 }
 
-.hx-input-date-has-calendar-icon.input-group-lg.custom-dates .hx-input-date-icon[b-vy6vrzeamt] {
+.hx-input-date-has-calendar-icon.input-group-lg.hx-input-date-predefined-dates .hx-input-date-icon[b-vy6vrzeamt] {
 	margin-right: 4.5rem;
 }
 
@@ -206,8 +210,8 @@ a[b-mo5ybhq3h9] {
 	padding-right: 4.75rem;
 }
 
-.hx-input-date-has-calendar-icon.input-group-sm.custom-dates .hx-input-date-icon[b-vy6vrzeamt] {
-    margin-right: 2.5rem;
+.hx-input-date-has-calendar-icon.input-group-sm.hx-input-date-predefined-dates .hx-input-date-icon[b-vy6vrzeamt] {
+	margin-right: 2.5rem;
 }
 
 .hx-input-date-has-calendar-icon.input-group-sm .form-control[b-vy6vrzeamt] {
@@ -227,17 +231,17 @@ a[b-mo5ybhq3h9] {
     z-index: 10;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Forms/Internal/HxInputDateRangeInternal.razor.rz.scp.css */
-.hx-input-date-range > button[b-cguxy625ss], .hx-input-date-range:not(.custom-date-ranges) .form-control ~ .form-control[b-cguxy625ss] {
+.hx-input-date-range > button[b-cguxy625ss], .hx-input-date-range:not(.hx-input-date-range-predefined-ranges) .form-control ~ .form-control[b-cguxy625ss] {
     border-top-right-radius: .25rem !important;
     border-bottom-right-radius: .25rem !important;
 }
 
-.input-group-sm > .hx-input-date-range > button[b-cguxy625ss], .input-group-sm > .hx-input-date-range:not(.custom-date-ranges) .form-control ~ .form-control[b-cguxy625ss] {
+.input-group-sm > .hx-input-date-range > button[b-cguxy625ss], .input-group-sm > .hx-input-date-range:not(.hx-input-date-range-predefined-ranges) .form-control ~ .form-control[b-cguxy625ss] {
     border-top-right-radius: .2rem;
     border-bottom-right-radius: .2rem;
 }
 
-.input-group-lg > .hx-input-date-range > button[b-cguxy625ss], .input-group-lg > .hx-input-date-range:not(.custom-date-ranges) .form-control ~ .form-control[b-cguxy625ss]  {
+.input-group-lg > .hx-input-date-range > button[b-cguxy625ss], .input-group-lg > .hx-input-date-range:not(.hx-input-date-range-predefined-ranges) .form-control ~ .form-control[b-cguxy625ss]  {
     border-top-right-radius: .3rem;
     border-bottom-right-radius: .3rem;
 }
@@ -602,18 +606,23 @@ input:focus[b-gb1jfrh5wb] {
 }
 
 .hx-tag-remove-button:hover[b-gb1jfrh5wb] {
-	background-color: rgba(0,0,0,var(--hx-input-tags-tag-hover-transparency));
+	background-color: rgba(0,0,0,var(--hx-input-tags-tag-hover-opacity));
 	border-radius: 50%;
 }
 
 [b-gb1jfrh5wb] .hx-tag-add-button:hover {
-	background-image: linear-gradient(to right, rgba(0,0,0,var(--hx-input-tags-tag-hover-transparency)),rgba(0,0,0,var(--hx-input-tags-tag-hover-transparency)));
+	background-image: linear-gradient(to right, rgba(0,0,0,var(--hx-input-tags-tag-hover-opacity)),rgba(0,0,0,var(--hx-input-tags-tag-hover-opacity)));
 }
 
 .hx-input-tags-control-focused:not(.hx-input-tags-naked)[b-gb1jfrh5wb] {
 	box-shadow: var(--hx-input-tags-control-focused-box-shadow);
 	border-color: var(--hx-input-tags-control-focused-border-color);
 	outline: 0;
+}
+
+.hx-input-tags-control:not(.hx-input-tags-naked)[b-gb1jfrh5wb]  .hx-input-tags-autosuggest-input {
+	border: 0;
+	flex-grow: 0;
 }
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Toasts/HxMessenger.razor.rz.scp.css */
 .hx-messenger[b-b0qooy64yi]  .hx-messenger-information .hx-icon {
@@ -630,4 +639,54 @@ input:focus[b-gb1jfrh5wb] {
 /* _content/Havit.Blazor.Components.Web.Bootstrap/Toasts/HxToastContainer.razor.rz.scp.css */
 .hx-toast-container[b-s6wlosgh2n] {
 	z-index: 1080;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/TreeViews/HxTreeView.razor.rz.scp.css */
+.hx-tree-view[b-x7mon8gako] {
+  height: 100%;
+  overflow-y: auto;
+}
+/* _content/Havit.Blazor.Components.Web.Bootstrap/TreeViews/Internal/HxTreeViewItemInternal.razor.rz.scp.css */
+.hx-tree-view-item[b-so2pyrqosf] {
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	padding: var(--hx-tree-view-item-padding);
+	margin: var(--hx-tree-view-item-margin);
+	font-size: var(--hx-tree-view-item-font-size);
+	border-radius: var(--hx-tree-view-item-border-radius);
+	background-color: var(--hx-tree-view-item-background);
+	color: var(--hx-tree-view-item-color);
+	transition: all 0.15s ease-in-out;
+}
+
+.hx-tree-view-item.selected[b-so2pyrqosf] {
+	background-color: rgba(var(--hx-tree-view-item-selected-background), var(--hx-tree-view-item-hover-background-opacity));
+	color: var(--hx-tree-view-item-selected-color);
+}
+
+.hx-tree-view-item:hover[b-so2pyrqosf] {
+	background-color: rgba(var(--hx-tree-view-item-hover-background), var(--hx-tree-view-item-hover-background-opacity));
+	color: var(--hx-tree-view-item-hover-color);
+}
+
+.hx-tree-view-item-spacer[b-so2pyrqosf] {
+	flex: 0 0 var(--hx-tree-view-item-spacer-width);
+}
+
+.hx-tree-view-item-title[b-so2pyrqosf] {
+	flex: 1;
+}
+
+.hx-tree-view-item-icon[b-so2pyrqosf], .hx-tree-view-item-expander[b-so2pyrqosf] {
+	color: var(--hx-tree-view-item-hover-color);
+	margin: var(--hx-tree-view-item-icon-margin);
+}
+
+.hx-tree-view-item-expander[b-so2pyrqosf] {
+	transition: all 0.15s ease-in-out;
+	transform: rotate(0deg);
+}
+
+.hx-tree-view-item-expander.expanded[b-so2pyrqosf] {
+	transform: rotate(90deg);
 }
