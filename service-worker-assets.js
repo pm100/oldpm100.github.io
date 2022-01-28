@@ -5,7 +5,7 @@
       "url": ".nojekyll"
     },
     {
-      "hash": "sha256-lDAEEaul32OkTANWkZgjgs4sFCsMdLsR5NJxrjVcXdo=",
+      "hash": "sha256-7TN54wkx\/Q8s4TQv+Pe4MVwx26ictvkb1BiCri38LfU=",
       "url": "css\/app.css"
     },
     {
@@ -77,7 +77,7 @@
       "url": "js\/index.bundle.js.LICENSE.txt"
     },
     {
-      "hash": "sha256-nxr86fy1nYzPVtGQxiGdEwF7jgJDzh6u1sAv8+g526g=",
+      "hash": "sha256-pQHwB3zrLFd8cS3jLsRXieVTf6H0UH9toJCeTfkcdCI=",
       "url": "js\/pitchd2.js"
     },
     {
@@ -125,11 +125,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-1HsUXr\/LjCJ9UZoT8kYNnPEO6Yj0y2wz1ATmWF6ZOl8=",
+      "hash": "sha256-vX9rdmaSSJEfizROeqOmZ7MeeKSIVFAmWGch8xsbCM0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-klkWRuBc5IkrVmQsTGDZ18dD6q+trVLJ+JnbQVnbzOo=",
+      "hash": "sha256-ggwYADSuKOR2lI+sAjZ8MJy\/tmANZwROHvAOTibrNGU=",
       "url": "_framework\/earworm.dll"
     },
     {
@@ -465,5 +465,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "3++cnLAC"
+  "version": "DjYNi5sM"
 };
