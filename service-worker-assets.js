@@ -5,6 +5,14 @@
       "url": ".nojekyll"
     },
     {
+      "hash": "sha256-usk6mh1ntuIb3brCxz+9WwrELzl45MyUPNc016p1OrU=",
+      "url": "assets\/Ab4.mp3"
+    },
+    {
+      "hash": "sha256-un\/KJHnGJD6Sn8TgLzxkP94TbD7w6xVb0opLKDWjtNY=",
+      "url": "assets\/Ab5.mp3"
+    },
+    {
       "hash": "sha256-7TN54wkx\/Q8s4TQv+Pe4MVwx26ictvkb1BiCri38LfU=",
       "url": "css\/app.css"
     },
@@ -81,7 +89,7 @@
       "url": "js\/pitchd2.js"
     },
     {
-      "hash": "sha256-nRNa+VyH754kIBMpBtYDaTcsQtGnCJsheWI0YStcfsQ=",
+      "hash": "sha256-nOIrBLt87xOOblP+sEJ8gmEcY4UTNJ\/CE2kHxrRspKo=",
       "url": "js\/pitcher.js"
     },
     {
@@ -125,11 +133,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-ce9MJlyN50Zl9uoIFOzI3tn8CAzbmYp7M7VBD0WXYTM=",
+      "hash": "sha256-KGIUZkZCFLAE6azyT73et9+jUkU4qtzwgIEdonrySHs=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-CX9m65p9BDArQRMOX4CpH9SN3dbrT\/ffqPv\/\/4oc5C8=",
+      "hash": "sha256-7qxfGCy6A\/usjJNOEeocxDFk8eIgDxUKxPYrq7X6O1M=",
       "url": "_framework\/earworm.dll"
     },
     {
@@ -465,5 +473,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "sD+7MooV"
+  "version": "wvalENj2"
 };
