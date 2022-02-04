@@ -93,7 +93,7 @@
       "url": "assets\/Ds7v10.mp3"
     },
     {
-      "hash": "sha256-rJkwGaCUmXH55sCElzgT2YgJmbIoiWqEgGGz+uRQVXw=",
+      "hash": "sha256-A9pKpXrLolFploT12KIn5OY7SMN3oDIoBRBPqhPWS1c=",
       "url": "assets\/ear.png"
     },
     {
@@ -185,7 +185,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-+kjvzLcrQAQ4npMuuH9jZIw95CnshtSyKs1kX52O1U8=",
+      "hash": "sha256-pdPbtDoj9IkUtPK8Fi1wt6RgGu2qOHwpiFOdJC\/SiJg=",
       "url": "index.html"
     },
     {
@@ -245,11 +245,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-zjzDslET+VPlG7buP1rGciLurXF\/1skm59aIPaitifs=",
+      "hash": "sha256-nzP83+9tHK11wFk4qYRzGad8pgJbe4\/QPux4JWq80Os=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-X2rbyhKjMOqJIheGRzIv5fbo625mbZYCegwz0jOSLgY=",
+      "hash": "sha256-WVxBGw1M2yRob0YQN2mjjSPPiILp\/aeOEbVfqc54+n8=",
       "url": "_framework\/earworm.dll"
     },
     {
@@ -585,5 +585,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "r20bXdS0"
+  "version": "Cdvz5m1O"
 };
