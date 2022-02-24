@@ -7,7 +7,7 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "earworm.dll": "sha256-f8VXoy7mFSKN2zRodfOQWHuhmbtyACER\/DAaAow7GkE=",
+      "earworm.dll": "sha256-oZiNW5PVwytInRVeAmMXHExQNjYxk+ndU1qs6V1GgHM=",
       "Havit.Blazor.Components.Web.Bootstrap.dll": "sha256-JRCn9MKkCZRfrJJXELy8ZPrbKpAPQpXplqRexaBP0os=",
       "Havit.Blazor.Components.Web.dll": "sha256-S2KxiuE1giKBjQvupUVETP61NGv2lzwPmFXg8lLDxHo=",
       "Havit.Core.dll": "sha256-shSiV\/cHGOV6DuNeiFb9s2O0CwZ32dzcHbN64tRS9kE=",
