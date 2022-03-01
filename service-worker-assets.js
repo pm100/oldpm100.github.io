@@ -17,8 +17,20 @@
       "url": "assets\/Ds4.mp3"
     },
     {
-      "hash": "sha256-A9pKpXrLolFploT12KIn5OY7SMN3oDIoBRBPqhPWS1c=",
+      "hash": "sha256-RgM4R+qB1zwiiL3ldSOdzwLznao\/1+NTuzuxXgKoZGY=",
       "url": "assets\/ear.png"
+    },
+    {
+      "hash": "sha256-39chTOvdvz90nD3Inh0ecoB2CsYqsvcXUYM88soFiEQ=",
+      "url": "assets\/ear192.png"
+    },
+    {
+      "hash": "sha256-xIRVbFxAyMfFBlf2s1ckD2mUbqpslVRDY7Ous\/pXReg=",
+      "url": "assets\/ear512.png"
+    },
+    {
+      "hash": "sha256-bVWpg\/FJ4y0g+jQNQ1LIsr5pqOeHXHXwQdm\/ocHxPSw=",
+      "url": "assets\/favicon-32.png"
     },
     {
       "hash": "sha256-y06G53LvWKaV9hRc9Vfz5n2jNcyP9fJ5\/tzgovRshmk=",
@@ -74,7 +86,7 @@
     },
     {
       "hash": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
-      "url": "favicon.ico"
+      "url": "favicon.ico_not"
     },
     {
       "hash": "sha256-DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=",
@@ -85,7 +97,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-OhByQVDrlNgltR+5CZJ8764jalRuEouBvpC0eGDlUGc=",
+      "hash": "sha256-xmpPteSIja5rQYU3MNj7vK9Pxu7DrMA+0Gz4rDVeCHk=",
       "url": "index.html"
     },
     {
@@ -113,7 +125,7 @@
       "url": "js\/worklet_pitcher.js"
     },
     {
-      "hash": "sha256-rLfNaPEIczagmMrVcT19gCVDyvKgrsdXEF8NGmroz7E=",
+      "hash": "sha256-fpSfozEK3+0aDjy7mTJkI0JEiTWxIUTAC9DiwCxk44w=",
       "url": "manifest.json"
     },
     {
@@ -493,5 +505,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "L7a49k3S"
+  "version": "0cNjAwBo"
 };
