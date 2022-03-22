@@ -10,8 +10,10 @@ class PitchDetectWorklet {
                 console.log(this.audioContext.audioWorklet);
                 await this.audioContext.audioWorklet.addModule('js/worklet_pitcher.js');
                 this.stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                console.log(this.stream);
                 var mediaStreamSource = this.audioContext.createMediaStreamSource(this.stream);
                 this.pitchWorklet = new AudioWorkletNode(this.audioContext, 'pitch-processor');
+                console.log(this.pitchWorklet);
                 this.setParam('buffersize', 10);
                 this.setParam('lockcount', 3);
                 this.setParam('silence', 0.01);

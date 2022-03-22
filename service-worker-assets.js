@@ -117,7 +117,7 @@
       "url": "js\/pitcher.js"
     },
     {
-      "hash": "sha256-TWE92q12op5TOt1ik2DBphxW1kAh+S0GUvrMiS7CUJI=",
+      "hash": "sha256-cQm2RgeGhFlR7pQPIusO7WL77J0\/XbL+2WS6UfyYllg=",
       "url": "js\/worklet_caller.js"
     },
     {
@@ -597,5 +597,5 @@
       "url": "_content\/Havit.Blazor.Components.Web.Bootstrap\/Havit.Blazor.Components.Web.Bootstrap.bundle.scp.css"
     }
   ],
-  "version": "8\/1Px1Pl"
+  "version": "bcLlT0++"
 };
