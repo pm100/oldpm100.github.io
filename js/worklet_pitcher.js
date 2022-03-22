@@ -20,7 +20,7 @@ class PitchProcessor extends AudioWorkletProcessor {
             { name: 'lockcount', defaultValue: 3, minValue: 1, maxValue: 1000 },
             { name: 'silence', defaultValue: 0.01, minValue: 0.001, maxValue: 1 },
             { name: 'threshold', defaultValue: 0.2, minValue: 0.001, maxValue: 1 },
-            { name: 'anote', defaultValue: 440, minValue: 1, maxValue: 10000 }
+            { name: 'afreq', defaultValue: 440, minValue: 1, maxValue: 10000 }
         ];
     }
     process(inputs, outputs, parameters) {
@@ -34,7 +34,7 @@ class PitchProcessor extends AudioWorkletProcessor {
             this.silence = parameters.silence[0];
             this.lockCount = parameters.lockcount[0];
             this.threshold = parameters.threshold[0];
-            this.anote = parameters.anote[0];
+            this.anote = parameters.afreq[0];
             this.buffer = new Float32Array(this.bsize);
             console.log(this.bsize, this.lockCount, this.silence, this.threshold);
         }
