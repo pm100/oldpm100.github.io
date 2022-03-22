@@ -14,8 +14,9 @@ class PitchDetectWorklet {
                 this.setParam('lockcount', 3);
                 this.setParam('silence', 0.01);
                 this.setParam('threshold', 0.2);
+                this.setParam('afreq', 440);
                 this.pitchWorklet.port.onmessage = (ev) => {
-                    this.cb(ev.data);
+                    this.cb(ev.data.n, ev.data.f);
                 };
                 mediaStreamSource.connect(this.pitchWorklet);
                 this.running = true;

@@ -1,4 +1,3 @@
-"use strict";
 class PitchProcessor extends AudioWorkletProcessor {
     constructor() {
         super();
@@ -12,6 +11,7 @@ class PitchProcessor extends AudioWorkletProcessor {
         this.lock = false;
         this.once = true;
         this.count = 0;
+        this.anote = 440;
         console.log("pitcher worklet");
     }
     static get parameterDescriptors() {
@@ -19,7 +19,8 @@ class PitchProcessor extends AudioWorkletProcessor {
             { name: 'buffersize', defaultValue: 20, minValue: 1, maxValue: 1000 },
             { name: 'lockcount', defaultValue: 3, minValue: 1, maxValue: 1000 },
             { name: 'silence', defaultValue: 0.01, minValue: 0.001, maxValue: 1 },
-            { name: 'threshold', defaultValue: 0.2, minValue: 0.001, maxValue: 1 }
+            { name: 'threshold', defaultValue: 0.2, minValue: 0.001, maxValue: 1 },
+            { name: 'anote', defaultValue: 440, minValue: 1, maxValue: 10000 }
         ];
     }
     process(inputs, outputs, parameters) {
@@ -33,6 +34,7 @@ class PitchProcessor extends AudioWorkletProcessor {
             this.silence = parameters.silence[0];
             this.lockCount = parameters.lockcount[0];
             this.threshold = parameters.threshold[0];
+            this.anote = parameters.anote[0];
             this.buffer = new Float32Array(this.bsize);
             console.log(this.bsize, this.lockCount, this.silence, this.threshold);
         }
@@ -66,7 +68,7 @@ class PitchProcessor extends AudioWorkletProcessor {
                         that.lock = true;
                         that.candidate = 0;
                         // we have a note, tell the caller
-                        this.port.postMessage(note);
+                        this.port.postMessage({ n: note, f: frequency });
                     }
                 }
                 else {
@@ -85,7 +87,7 @@ class PitchProcessor extends AudioWorkletProcessor {
     }
     // converts frequency to midi note number
     noteFromPitch(frequency) {
-        var noteNum = 12 * (Math.log(frequency / 440) / Math.log(2));
+        var noteNum = 12 * (Math.log(frequency / this.anote) / Math.log(2));
         return Math.round(noteNum) + 69;
     }
     autoCorrelate(buf, sampleRate) {
@@ -137,3 +139,4 @@ class PitchProcessor extends AudioWorkletProcessor {
     }
 }
 registerProcessor('pitch-processor', PitchProcessor);
+export {};
