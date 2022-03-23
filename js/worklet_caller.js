@@ -20,6 +20,8 @@ class PitchDetectWorklet {
                 this.setParam('silence', 0.01);
                 this.setParam('threshold', 0.2);
                 this.setParam('afreq', 440);
+                this.setParam('samprate', this.audioContext.sampleRate);
+                console.log(this.audioContext.sampleRate);
                 this.pitchWorklet.port.onmessage = (ev) => {
                     this.cb(ev.data.n, ev.data.f);
                 };

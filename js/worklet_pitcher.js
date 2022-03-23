@@ -12,6 +12,7 @@ class PitchProcessor extends AudioWorkletProcessor {
         this.once = true;
         this.count = 0;
         this.anote = 440;
+        this.samprate = 48000;
         console.log("pitcher worklet");
     }
     static get parameterDescriptors() {
@@ -20,7 +21,8 @@ class PitchProcessor extends AudioWorkletProcessor {
             { name: 'lockcount', defaultValue: 3, minValue: 1, maxValue: 1000 },
             { name: 'silence', defaultValue: 0.01, minValue: 0.001, maxValue: 1 },
             { name: 'threshold', defaultValue: 0.2, minValue: 0.001, maxValue: 1 },
-            { name: 'afreq', defaultValue: 440, minValue: 1, maxValue: 10000 }
+            { name: 'afreq', defaultValue: 440, minValue: 1, maxValue: 10000 },
+            { name: 'samprate', defaultValue: 48000, minValue: 1, maxValue: 1000000 },
         ];
     }
     process(inputs, outputs, parameters) {
@@ -35,6 +37,7 @@ class PitchProcessor extends AudioWorkletProcessor {
             this.lockCount = parameters.lockcount[0];
             this.threshold = parameters.threshold[0];
             this.anote = parameters.afreq[0];
+            this.samprate = parameters.samprate[0];
             this.buffer = new Float32Array(this.bsize);
             console.log(this.bsize, this.lockCount, this.silence, this.threshold);
         }
@@ -45,7 +48,7 @@ class PitchProcessor extends AudioWorkletProcessor {
         if (this.count >= this.bsize) {
             // we have enough data
             this.count = 0;
-            var [fq, rms] = this.autoCorrelate(this.buffer, 48000);
+            var [fq, rms] = this.autoCorrelate(this.buffer, this.samprate);
             this.processNote(fq, rms);
         }
         return true;
