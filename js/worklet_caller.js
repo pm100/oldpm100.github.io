@@ -9,6 +9,7 @@ class PitchDetectWorklet {
                 console.log(this.audioContext);
                 console.log(this.audioContext.audioWorklet);
                 await this.audioContext.audioWorklet.addModule('js/worklet_pitcher.js');
+                console.log("after add worklet");
                 this.stream = await navigator.mediaDevices.getUserMedia({ audio: true });
                 console.log(this.stream);
                 var mediaStreamSource = this.audioContext.createMediaStreamSource(this.stream);
